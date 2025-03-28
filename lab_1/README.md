@@ -16,3 +16,8 @@
 ### HackMD
 
 https://hackmd.io/@Yu-Lin/embedded-system-lab1
+
+## Demo
+
+https://github.com/user-attachments/assets/17d980e1-9d60-45fd-b9fb-9a38d9cd9129
+
