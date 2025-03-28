@@ -8,3 +8,7 @@
 - Development IDE: [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
 - Development OS: [FreeRTOS V10.2.1](https://github.com/FreeRTOS/FreeRTOS/tree/V10.2.1)
 - Development Language: C
+
+## 相關筆記
+
+[2025 嵌入式作業系統分析與實作筆記](https://hackmd.io/@Yu-Lin/embedded-system)
