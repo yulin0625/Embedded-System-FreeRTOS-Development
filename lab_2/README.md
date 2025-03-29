@@ -21,4 +21,5 @@ https://hackmd.io/@Yu-Lin/embedded-system-lab2
 
 ## Demo
 
-[Demo video](./demo/lab2_demo.mp4)
+https://github.com/user-attachments/assets/706ae5ab-c5b2-4f10-b583-31e25eb375bf
+
