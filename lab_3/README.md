@@ -18,4 +18,4 @@ https://hackmd.io/@Yu-Lin/embedded-system-lab3
 
 ## Demo
 
-https://github.com/user-attachments/assets/2e2e98e7-cdc0-44d9-af67-9771a7d9b561
+https://github.com/user-attachments/assets/ee249527-ff02-4003-901e-fded2f915281
