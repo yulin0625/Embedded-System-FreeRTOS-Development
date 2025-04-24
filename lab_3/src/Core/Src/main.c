@@ -122,7 +122,7 @@ void vHandlerTask( void *pvParameters )
 		if(xSemaphoreTake(xSemaphore, portMAX_DELAY) == pdTRUE)
 		{
 			uint8_t data = 0;
-			// 橘燈閃5次
+			// 橘燈閃5次 (ON/OFF 共 10 次)
 			for(int i = 0; i < 10; i++)
 			{
 				// 切換 LED 狀態 (假設GPIO_PIN_13接LED)
@@ -134,7 +134,7 @@ void vHandlerTask( void *pvParameters )
 				while(HAL_GetTick() - From_begin_time < pdMS_TO_TICKS(250)){}
 			}
 
-			// 從MEMS裝置讀取資料 (例如加速規資料)
+			// 讀取感測器資料，避免中斷鎖死
 			MEMS_Read(LIS3DSH_OUTS1_ADDR, &data);
 		}
 	}
@@ -150,7 +150,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 	/* 紅燈 toggle */
 	HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-
 }
 /* USER CODE END 0 */
 
