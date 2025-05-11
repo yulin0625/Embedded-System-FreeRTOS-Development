@@ -1,0 +1,49 @@
+PreLab:
+
+RED_LED
+pvReturn: 0x20000240 | heapSTRUCT_SIZE: 8 | WantedSize: 400 | BlockSize: 408
+pvReturn: 0x200003d8 | heapSTRUCT_SIZE: 8 | WantedSize:  88 | BlockSize:  96
+TASK1
+pvReturn: 0x20000438 | heapSTRUCT_SIZE: 8 | WantedSize: 200 | BlockSize: 208
+pvReturn: 0x20000508 | heapSTRUCT_SIZE: 8 | WantedSize:  88 | BlockSize:  96
+TASK2
+pvReturn: 0x20000568 | heapSTRUCT_SIZE: 8 | WantedSize: 120 | BlockSize: 128
+pvReturn: 0x200005e8 | heapSTRUCT_SIZE: 8 | WantedSize:  88 | BlockSize:  96
+GREEN_LED
+pvReturn: 0x20000648 | heapSTRUCT_SIZE: 8 | WantedSize: 520 | BlockSize: 528
+pvReturn: 0x20000858 | heapSTRUCT_SIZE: 8 | WantedSize:  88 | BlockSize:  96
+TASK3
+pvReturn: 0x200008b8 | heapSTRUCT_SIZE: 8 | WantedSize: 160 | BlockSize: 168
+pvReturn: 0x20000960 | heapSTRUCT_SIZE: 8 | WantedSize:  88 | BlockSize:  96
+PRINT
+pvReturn: 0x200009c0 | heapSTRUCT_SIZE: 8 | WantedSize: 520 | BlockSize: 528
+pvReturn: 0x20000bd0 | heapSTRUCT_SIZE: 8 | WantedSize:  88 | BlockSize:  96
+IDLE
+pvReturn: 0x20000c30 | heapSTRUCT_SIZE: 8 | WantedSize: 520 | BlockSize: 528
+pvReturn: 0x20000e40 | heapSTRUCT_SIZE: 8 | WantedSize:  88 | BlockSize:  96
+
+=============================================================================
+
+Part1:
+
+StartAddress heapSTRUCT_SIZE xBlockSize EndAddress
+0x20000958         8             96         0x200009b8
+0x200005e0         8             96         0x20000640
+0x20000500         8             96         0x20000560
+0x20000560         8            128         0x200005e0
+0x200008b0         8            168         0x20000958
+0x20000430         8            208         0x20000500
+0x20000e98         8           1944         0x20001630
+
+configADJUSTED_HEAP_SIZE: 5112 xFreeBytesRemaining: 2736
+
+=============================================================================
+
+Part2:
+
+StartAddress heapSTRUCT_SIZE xBlockSize EndAddress
+0x200008b0         8            264         0x200009b8
+0x20000430         8            528         0x20000640
+0x20000e98         8           1944         0x20001630
+
+configADJUSTED_HEAP_SIZE: 5112 xFreeBytesRemaining: 2736
