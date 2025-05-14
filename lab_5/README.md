@@ -12,3 +12,5 @@
 https://hackmd.io/@Yu-Lin/embedded-system-lab5
 
 ## Demo
+
+https://github.com/user-attachments/assets/67bb659c-42d6-4c7a-b2a9-7cc4ae9200c5
