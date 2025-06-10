@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 WiFi 電風扇控制系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">電風扇控制系統</h1>
+            <p class="subtitle">ESP32 WiFi 控制</p>
+        </div>
+
+        <div class="sensor-info">
+            <div class="sensor-row">
+                <div class="sensor-item">
+                    <div class="sensor-label">溫度</div>
+                    <div class="sensor-value" id="temperature">--°C</div>
+                </div>
+                <div class="sensor-item">
+                    <div class="sensor-label">濕度</div>
+                    <div class="sensor-value" id="humidity">--%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn on" onclick="controlFan('on')">開</button>
+            <button class="control-btn off" onclick="controlFan('off')">關</button>
+            <button class="control-btn up" onclick="controlFan('up')">風量 +</button>
+            <button class="control-btn down" onclick="controlFan('down')">風量 -</button>
+        </div>
+
+        <div class="timer-controls">
+            <button class="timer-btn" onclick="openTimerModal('on')">定時開</button>
+            <button class="timer-btn" onclick="openTimerModal('off')">定時關</button>
+        </div>
+
+        <div class="status" id="status"></div>
+    </div>
+
+    <!-- 定時設定 Modal -->
+    <div id="timerModal" class="modal">
+        <div class="modal-content">
+            <h3 class="modal-title" id="modalTitle">設定定時開啟</h3>
+            <div class="timer-input">
+                <button class="timer-btn-small" onclick="adjustTimer(-15)">-</button>
+                <div class="timer-value" id="timerValue">0 分鐘</div>
+                <button class="timer-btn-small" onclick="adjustTimer(15)">+</button>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn confirm" onclick="confirmTimer()">確認</button>
+                <button class="modal-btn cancel" onclick="closeTimerModal()">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
